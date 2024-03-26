@@ -18,20 +18,15 @@ main {
 
 /*Banner*/
 
-.banners {
-    width: 100%;
-    height: 100vh; /* Garante que ocupe toda a altura da viewport */
-    background-image: url(banner.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* Garante que a imagem cubra toda a área do elemento */
-    background-position: center;
-    display: flex; /* Flexbox para centralizar o conteúdo verticalmente */
-    justify-content: center; /* Flexbox para centralizar o conteúdo horizontalmente */
-    align-items: center; /* Flexbox para centralizar o conteúdo verticalmente */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
-}
+.banner-1 {
 
+    background-image: url(banner.png);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin:0;
+
+}
 
 .banners {
     width: 100%;
@@ -40,6 +35,8 @@ main {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    
 
 }
 
@@ -59,7 +56,6 @@ p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     font-size: 28px;
 } 
-
 
 
 /*sobre nós*/
