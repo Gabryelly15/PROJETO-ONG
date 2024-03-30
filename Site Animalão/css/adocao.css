@@ -1,0 +1,109 @@
+/* imagem da adoção */
+.adocao img{
+    border-radius: 50%;
+    height: 170px;
+    border: solid 6px #09a304;
+    margin-top: 15px;
+    
+    
+}
+
+/* retangulo da adoção */
+.preadocao{
+    background-color: #CD784A;
+    width: 70vw;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+
+    
+}
+
+/* circulo da adoção */
+.adocao{
+    background-color: #CD784A;
+    border-radius: 0% 50% 50% 0%;
+    min-width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    
+
+    
+}
+
+/* section da adoção */
+.card1{
+    display: flex;
+    margin-top: 20px;
+}
+
+/* retangulo loja */
+.preloja{
+    background-color: #09a304;
+    width: 70vw;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* circulo loja */
+.loja{
+    background-color: #09a304;
+    border-radius: 50% 0% 0% 50%;
+    min-width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+/* imagem loja */
+
+.loja img{
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    border: solid 6px #CD784A;
+    margin-top: 15px;
+    
+    
+}
+
+/* section loja */
+.card2{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+/* Transição da doação */
+
+.invisivel-adocao{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translatex(-100%);
+    transition: all 2s;
+}
+
+.visivel-adocao{
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+    transition: all 2s;
+}
+
+/* Transição da loja */
+
+.invisivel-loja{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translatex(100%);
+    transition: all 2s;
+}
+
+.visivel-loja{
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+    transition: all 2s;
+}
