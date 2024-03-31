@@ -1,4 +1,6 @@
-
+.section-valores{
+    background-color: #cd784a48;
+}
 
 .missao, .visao, .valores{
     border: solid 1px #09a304;
@@ -60,4 +62,56 @@
 
 .acreditamos :nth-child(3){
     transition-delay: 1.7s;
+}
+
+.mell, .luana{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+}
+h4{
+    margin-top: 50px;
+}
+
+.texto p{
+    padding: 0 30px 0 30px;
+    font-size: 16px;
+}
+
+
+.mell img, .luana img{
+    max-width: 40%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.fundadoras{
+    text-align: center;
+}
+
+.time h3{
+    color: #CD784A;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.time h4{
+    color: #09a304;
+    font-weight: bold;
+}
+
+.invisivel-time{
+    opacity: 0;
+    filter: blur(15px);
+    transition: opacity 1s, filter 1s;
+}
+
+.visivel-time{
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 1s, filter 1s;
+    
 }
