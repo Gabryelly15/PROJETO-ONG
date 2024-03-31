@@ -27,6 +27,7 @@ footer {
     width: 100%;
     color: var(--color-neutral-40);
     position: relative; /* Adicione essa linha */
+    padding-top: 70px;
 }
 
 .footer-link {
