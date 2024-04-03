@@ -1,4 +1,6 @@
 /* imagem da adoção */
+body { overflow-x: hidden; }
+
 .adocao img{
     border-radius: 50%;
     height: 170px;
