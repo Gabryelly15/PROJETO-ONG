@@ -106,9 +106,10 @@ p{
 
 /*missão, visão e valores*/
 
-.terceira {
+.produtos {
 
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .cards-container {
@@ -154,7 +155,7 @@ p{
 
 .card-img-top {
     object-fit: cover; 
-    height: 200px; 
+    height: 300px; 
 }
 
 .text-center {
