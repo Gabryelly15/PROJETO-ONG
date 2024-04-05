@@ -1,12 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
-
 }
 
 * {
@@ -19,14 +15,14 @@
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr min-content; /* Adicione 'min-content' para o rodapé */
+    grid-template-rows: auto 1fr min-content;
     min-height: 100vh;
 }
 
 footer {
     width: 100%;
     color: var(--color-neutral-40);
-    position: relative; /* Adicione essa linha */
+    position: relative;
     padding-top: 70px;
 }
 
@@ -36,9 +32,15 @@ footer {
 
 #footer_content {
     background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-right {
+    text-align: right;
+    padding-right: 3.5rem; /* Ajuste conforme necessário */
+    width: 100%; /* Para garantir que ocupe toda a largura disponível */
 }
 
 #footer_contacts h1 {
@@ -99,10 +101,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: flex-end;
 }
 
 #footer_subscribe p {
     color: var(--color-neutral-30);
+    margin: 0; /* Remover margem padrão */
 }
 
 #input_group {
@@ -113,9 +117,9 @@ footer {
 }
 
 #input_group input {
-    all: unset;
     padding: 0.75rem;
     width: 100%;
+    border: 1px solid #ccc; /* Adicione uma borda para tornar a caixa de entrada visível */
 }
 
 #input_group button {
@@ -133,6 +137,7 @@ footer {
 #input_group button:hover {
     opacity: 0.8;
 }
+
 
 #footer_copyright {
     display: flex;
