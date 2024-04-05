@@ -49,11 +49,12 @@ h5 {
 .wrapper{
     margin: 40px auto;
     padding: 20px;
-    background: #C9CFB5;
+    background: #FFDAB9;
     border-radius: 50px;
     width: 40%;
     position: relative;
     transition: all 5s ease-in-out;
+
 }
 
 .wrapper h2{
@@ -91,8 +92,9 @@ h5 {
 
 .container_voluntariado{
     border-radius: 5px;
-    background-color: #C9CFB5;
+    background-color: #FFDAB9;
     padding: 20px 0;
+    margin-top: 0;
 
 }
 
@@ -107,7 +109,6 @@ form label{
 input[type=text], textarea{
     width: 100%;
     padding: 14px;
-    border: 5px solid #ccc;
     border-radius: 15px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -130,6 +131,7 @@ input[type="submit"]{
     text-align: center;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 .banner-2 {
