@@ -21,10 +21,6 @@ body { overflow-x: hidden; }
 }
 
 
-.preadocao p {
-    font-size: 22px; 
-}
-
 /* circulo da adoção */
 .adocao{
     background-color: #CD784A;
@@ -54,16 +50,16 @@ body { overflow-x: hidden; }
 }
 
 
-/* Círculo loja */
-.loja {
+/* circulo loja */
+.loja{
     background-color: #09a304;
     border-radius: 50% 0% 0% 50%;
     min-width: 200px;
     height: 200px;
     text-align: center;
     position: relative;
-    margin-bottom: 20px; /* Adicionando espaço abaixo da seção 'loja' */
 }
+
 /* imagem loja */
 
 .loja img{
