@@ -71,3 +71,23 @@ header_fino{
     color: #09a304;
     text-transform: uppercase;
 }
+
+/*menu lateral lojinha(anny)*/
+.menu-button {
+    display: none; /* Inicialmente oculto */
+    position: relative;
+    float: left; /* Alinha o botão "Menu" à esquerda */
+    margin-right: 10px; /* Reduzindo a margem direita */
+    margin-left: 10px; /* Reduzindo a margem esquerda */
+}
+
+/* teste de Ajuste para a barra de pesquisa -anny (qualquer coisa pode remover)  */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-top: 0; /* Se necessário, ajuste a margem superior */
+    vertical-align: middle;
+}
