@@ -1,11 +1,21 @@
-// Supondo que você tenha uma variável ou função para obter a contagem de produtos no carrinho
-let productCount = 0; // Atualize isso com a contagem real
+// Defina uma variável global para armazenar a quantidade de itens no carrinho
+let itemCount = 0;
 
-// Atualiza a contagem de produtos no carrinho
-function updateCartCount(count) {
-    const cartCountElement = document.getElementById('cartCount');
-    cartCountElement.textContent = count;
+// Função para atualizar o contador de itens no carrinho e exibi-lo no ícone do carrinho
+function updateCartCounter() {
+    const cartCounter = document.getElementById('cart-counter');
+    cartCounter.textContent = itemCount;
+    console.log('Contador atualizado:', itemCount);
 }
 
-// Exemplo de chamada para atualizar a contagem de produtos (chame isso sempre que a contagem mudar)
-updateCartCount(productCount);
+// Adicione um evento de clique aos botões "Comprar" em cada card
+const buyButtons = document.querySelectorAll('.botao-padrao');
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Incrementa o contador de itens no carrinho
+        itemCount++;
+        console.log('Item adicionado ao carrinho. Novo contador:', itemCount);
+        // Atualiza o contador de itens no carrinho
+        updateCartCounter();
+    });
+});
