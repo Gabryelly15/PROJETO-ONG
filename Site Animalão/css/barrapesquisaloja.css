@@ -4,6 +4,7 @@
 }
 
 .search-bar input[type="text"] {
+    margin-top: 18px;
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -12,6 +13,7 @@
 }
 
 .search-bar button {
+    margin-top: 5px;
     color: #09a304; /* Cor do texto do botão */
     border: none; /* Remove a borda do botão */
     background-color: transparent; /* Define a cor de fundo como transparente */
