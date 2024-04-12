@@ -163,6 +163,7 @@ main {
 
 /* arrumar a logo do insta para o final do cabeçalho*/
 .instagram-logo {
+    margin-top: 12px; /* Ajuste conforme necessário */
     position: absolute; /* Posicionamento absoluto */
     bottom: 10px; /* Ajuste a posição conforme necessário */
     right: 4px; /* Ajuste a posição conforme necessário */
