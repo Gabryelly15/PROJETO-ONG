@@ -11,6 +11,7 @@
 }
 
 .menu-button img {
+    margin-top: -5px;
     margin-right: 2px; /* Adiciona um espaçamento entre a imagem e o texto */
     width: 30px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
@@ -33,7 +34,7 @@
 
 /* Alterações para os links dentro do menu suspenso */
 .menu-dropdown ul li a {
-    color:#09a304; /* Altera a cor do texto para preto */
+    color:#09a304; /* Altera a cor do texto para verde */
     text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -94,4 +95,36 @@
 
 .pagination-buttons button:hover {
     color: #CD784A; /* Cor do texto ao passar o mouse */
+}
+/*botão carrinho*/
+.cart-container {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+}
+
+#cartButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cartButton img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 5px; /* Ajuste conforme necessário */
+}
+
+#cartCount {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
 }
