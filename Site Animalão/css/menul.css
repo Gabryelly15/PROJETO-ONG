@@ -45,7 +45,7 @@
 .menu-dropdown {
     display: none; /* Inicialmente oculto */
     position: fixed; /* Define a posição fixa em relação à tela */
-    top: 150px; /* Distância do topo do menu até o cabeçalho */
+    top: 185px; /* Distância do topo do menu até o cabeçalho */
     left: 0; /* Alinha o menu com a lateral esquerda da tela */
     background-color: #C9CFB5;
     border: 1px solid #C9CFB5;
