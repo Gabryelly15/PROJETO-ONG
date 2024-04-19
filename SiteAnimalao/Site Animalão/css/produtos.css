@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFF5EB; 
-    height: 3000px;
+    height: 2200px;
 }
 
 main {
@@ -37,11 +37,11 @@ main {
     text-align: center; 
     font-size: 30px;
     font-weight: bold;
-    height: 100vh;
     margin: 0%;
     z-index: 2;
     min-height: 100vh; /* Alterado para ocupar no mínimo a altura da tela */
     margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 50px; /* Adicionei margem superior aqui */
 }
 
 .container {
@@ -65,12 +65,16 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     width: 325px;
+    display: flex; /* Adicionei display flex para corrigir problemas de layout */
+    flex-direction: column; /* Alterei para column para garantir que o conteúdo fique empilhado */
+    align-items: center; /* Centralizei os elementos verticalmente */
 }
 
 .card img {
     width: 85%; /* Define a largura da imagem como 100% do contêiner pai (o card) */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que a imagem não tenha espaços em branco abaixo dela */
+    margin-bottom: 15px; /* Adicionei margem inferior para separar a imagem do texto */
 }
 
 
@@ -82,12 +86,16 @@ main {
 
 .card-body {
     background-color:#fff;
+    flex-grow: 1; /* Adicionei flex-grow para garantir que o conteúdo expanda */
+    width: 100%; /* Defini a largura como 100% */
+    padding: 10px; /* Adicionei um pouco de preenchimento */
 
 }
 
 .card-body h4{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
+    margin-bottom: 10px;
 }
 
 .card-img-top {
@@ -108,8 +116,8 @@ main {
     color: #fff; 
     border: none; 
     border-radius: 5px; 
-    padding: 20px 40px; 
-    font-size: 24px; 
+    padding: 10px 20px; 
+    font-size: 18px; 
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
@@ -124,7 +132,7 @@ main {
     color: #fff; 
     border: none; 
     border-radius: 5px; 
-    padding: 20px 40px; 
+    padding: 10px 20px; 
     font-size: 24px; 
     text-align: center; 
     text-decoration: none; 
@@ -167,4 +175,164 @@ main {
     position: absolute; /* Posicionamento absoluto */
     bottom: 10px; /* Ajuste a posição conforme necessário */
     right: 4px; /* Ajuste a posição conforme necessário */
+}
+
+/*pop-ups de cadastro*/
+
+h5 {
+    font-family: 'Best School', Arial, sans-serif;
+    height: 100vh;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.box{
+    text-align: center;
+    
+}
+
+.button{
+    font-size: 2.5em;
+    padding: 8px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background:green;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Best School', Arial, sans-serif;
+
+}
+
+.button:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9); 
+    background-color: brown;
+}
+
+.overlay{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper{
+    margin: 40px auto;
+    padding: 20px;
+    background: #FFDAB9;
+    border-radius: 50px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+}
+
+.wrapper h2{
+    font-family: 'Best School', Arial, sans-serif;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 35px;
+    width: 80%;
+    line-height: 1.7;
+    margin-top: 0;
+    color: #CD784A;
+    align-items: center;
+}
+
+.wrapper p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 28px;
+}
+
+.wrapper .close{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#CD784A;
+}
+
+.wrapper .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+.container_voluntariado{
+    border-radius: 5px;
+    background-color: #FFDAB9;
+    padding: 20px 0;
+    margin-top: 0;
+
+}
+
+form label{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 14px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    font-family: 'Best School', Arial, sans-serif;
+    background-color: #CD784A;
+    color: #fff;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.remover-produtos {
+    background-color: brown; /* Cor de fundo vermelha */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaçamento superior */
+    cursor: pointer; /* Cursor de apontar */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.remover-produtos:hover {
+    background-color: #ff1010; /* Cor de fundo vermelha mais escura ao passar o mouse */
+}
+
+/* Ajuste de espaçamento entre botões */
+.card-body .botao-padrao {
+    margin-bottom: 10px; /* Adiciona um espaço entre o botão "comprar" e o botão "remover" */
 }
