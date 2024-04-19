@@ -98,7 +98,7 @@
 }
 /*botão carrinho*/
 .cart-container {
-    position: absolute;
+    position: fixed;
     top: 10px; /* Ajuste conforme necessário */
     right: 10px; /* Ajuste conforme necessário */
 }
