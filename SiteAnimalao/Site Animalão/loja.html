@@ -9,11 +9,9 @@
         <title>Mansão Animalão</title>
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/headerloja.css">
-        <link rel="stylesheet" href="css/carrosel.css">
         <link rel="stylesheet" href="css/faixa.css">
         <link rel="stylesheet" href="css/adocao.css">
         <link rel="stylesheet" href="css/rodape.css">
-        <link rel="stylesheet" href="css/voluntariado.css">
         <link rel="stylesheet" href="css/produtos.css">
         <link rel="stylesheet" href="css/menul.css">
         <link rel="stylesheet" href="css/barrapesquisaloja.css">
@@ -23,6 +21,7 @@
         <script src="js/menususp.js" defer></script>
         <script src="js/nextpage.js" defer></script>
         <script src="js/barrapesquisa.js" defer></script>
+        <script src="js/cadastroprodutos.js" defer></script>
         <link rel="shortcut icon" href="./" type="image/x-icon">
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
@@ -89,7 +88,6 @@
             <li><a href="Index.html">Início</a></li>
             <li><a href="carrinho.html">Carrinho</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="">Cadastro de produtos</a></li>
             <li><a href="">ETC...</a></li>
         </ul>
     </div>
@@ -101,11 +99,10 @@
 
         </button>
     </div>
-    
-
+    <main class="background-image"><!--alteração anny pra colocar logo no fundo no css-->
+        
    <!-- PRODUTOS CARDS - GABY -->
 
-   <main class="background-image"><!--alteração anny pra colocar logo no fundo no css-->
     <div class="container2"><!--alteração anny para arrumar o titulo "Produtos para o seu pet!" com o cabeçalho no css-->
 
    <section class="produtos">
@@ -118,6 +115,7 @@
                     <h4 class="produto-title">Coração anatômico de pelúcia</h4>
                     <h4 class="preco-produto">R$ 45,00</h4>
                     <a href="#" class="botao-padrao">COMPRAR</a>
+                    <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
                 </div>
             </div>
 
@@ -127,6 +125,7 @@
                     <h4 class="produto-title">Ecobag de algodão crú de bichinho</h4>
                     <h4 class="preco-produto">R$ 25,00</h4>
                     <a href="#" class="botao-padrao">COMPRAR</a>
+                    <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
                 </div>
             </div>
 
@@ -136,6 +135,7 @@
                     <h4 class="produto-title">Tapetinho de pano em forma de ossinho - Abelha</h4>
                     <h4 class="preco-produto">R$ 40,00</h4>
                     <a href="#" class="botao-padrao">COMPRAR</a>
+                    <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
                 </div>
             </div>
 
@@ -145,6 +145,7 @@
                     <h4 class="produto-title">Tapetinho de pano em forma de ossinho - Onça</h4>
                     <h4 class="preco-produto">R$ 40,00</h4>
                     <a href="#" class="botao-padrao">COMPRAR</a>
+                    <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
                 </div>
             </div>
 
@@ -154,22 +155,19 @@
                     <h4 class="produto-title">Tapetinho de pano em forma de ossinho - Nuvens</h4>
                     <h4 class="preco-produto">R$ 40,00</h4>
                     <a href="#" class="botao-padrao">COMPRAR</a>
+                    <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
                 </div>
             </div>
 <!--teste anny-->
-            <div class="card">
-                <img src="imagem/bolinhateste.jpg" class="produto-imagem" alt="produto6">
-                <div class="card-body">
-                    <h4 class="produto-title">Teste teste teste teste teste</h4>
-                    <h4 class="preco-produto">R$ 00,00</h4>
-                    <a href="#" class="botao-padrao">COMPRAR</a>
-                </div>
-            </div>
-        </div> 
+<div class="card">
+    <img src="imagem/bolinhateste.jpg" class="produto-imagem" alt="produto6">
+    <div class="card-body">
+        <h4 class="produto-title">Teste teste teste teste teste</h4>
+        <h4 class="preco-produto">R$ 00,00</h4>
+        <a href="#" class="botao-padrao">COMPRAR</a>
+        <button class="remover-produtos" onclick="removerProduto(this)">Remover</button>
+    </div>
     </section>
-</section>
-
-
 </main>
 <!--Botão próxima pág (ANNY)-->
 <div class="pagination-buttons">
@@ -177,7 +175,6 @@
     <span class="page-info"></span>
     <button class="next-page" style="color: #09a304; background-color: transparent;">Próxima Página →</button>
 </div>
-
 
 <footer>
     <div id="footer_content">
@@ -218,7 +215,34 @@
         2024 todos os direitos reservados
     </div>
 </footer>
+<!-- Botão para abrir o pop-up de cadastro de produtos -->
+<div class="box" id="cadastroProdutoButton" style="position: fixed; bottom: 5px; right: 5px; display: flex; flex-direction: row;">
+    <a href="#cadastroProduto" class="button" style="margin-right: 10px; padding: 8px 16px; font-size: 14px; font-weight: bold;">Cadastrar Produto</a>
+</div>
+<!-- Pop-up de cadastro de produtos (Anny) -->
+<div class="overlay" id="cadastroProduto">
+    <div class="wrapper">
+        <h2>Cadastrar Novo Produto:</h2>
+        <a href="#" class="close">&times;</a>
+        <div class="content">
+            <div class="container_produtos">
+                <form id="formCadastroProduto">
+                    <label for="nomeProduto">Nome do Produto:</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" required>
+                    <label for="valorProduto">Valor do Produto:</label>
+                    <input type="text" id="valorProduto" name="valorProduto" required>
+                    <label for="imagemProduto">Imagem do Produto (jpg, jpeg, png):</label>
+                    <input type="file" id="imagemProduto" name="imagemProduto" accept="image/jpeg, image/png" required>
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/carrinho.js" defer></script>
 <script src="js/carrinholoja.js" defer></script>
+
+
+
 </body>
 </html>
