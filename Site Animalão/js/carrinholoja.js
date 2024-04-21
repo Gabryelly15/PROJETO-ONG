@@ -23,3 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'carrinho.html';
     });
 });
+// Impedir a rolagem automática da tela para o ícone do carrinho quando o botão "comprar" for clicado
+function stopScrollToCartOnBuy() {
+    window.addEventListener("load", function() {
+        const buyButtons = document.querySelectorAll('.botao-padrao');
+        buyButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+            });
+        });
+    });
+}
+
+// Chamar a função para impedir a rolagem automática da tela para o ícone do carrinho quando o botão "comprar" for clicado
+stopScrollToCartOnBuy();
