@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#bannerblog {
+    position: relative;
+    height: 450px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+#bannerblog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(cachorro_carrosel_3.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Defina a opacidade da imagem de fundo */
+}
+
+#menublog-container {
+    position: absolute;
+    top: 20px; /* Distância do topo da tela */
+    right: 20px; /* Distância da direita da tela */
+}
+
+main {
+    margin-top: 80px; /* Espaçamento entre o menu e os cards */
+}
+
+#menublog {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent; /* Cor de fundo do menu */
+}
+
+#menublog a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif; /* Altera a fonte */
+    font-size: 20px; /* Altera o tamanho do texto */
+    transition: color 0.3s; /* Adiciona transição suave à cor do texto */
+}
+
+#menublog a:hover {
+    color: #CD784A; /* Altera a cor do texto ao passar o mouse */
+}
+
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 50px; /* Tamanho do texto */
+    font-weight: bold; /* Peso da fonte */
+}
+
+
+/*Cards POST*/
+
+.post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); /* Para mostrar 3 cards por linha */
+    float: left; /* Para alinhar os cards lado a lado */
+    margin-right: 20px; /* Espaçamento entre os cards */
+
+    .edit-post-button {
+        display: block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .edit-post-button:hover {
+        background-color: brown; /* Altera a cor de fundo ao passar o mouse */
+    }
+}
+
+.post-card:last-child {
+    margin-right: 0; /* Remove o espaçamento do último card */
+}
+
+
+.post-card img {
+    width: 100%;
+    height: 200px; /* Defina a altura desejada para as imagens */
+    object-fit: cover; /* Mantém a proporção e corta a imagem para preencher o contêiner */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o conteúdo do card */
+}
+
+
+.post-card h2 {
+    font-size: 20px; /* Tamanho da fonte do título */
+}
+
+.post-card p {
+    font-size: 14px; /* Tamanho da fonte do texto */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-footer button:hover {
+    color: red;
+}
+
+#sub-menu {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Espaçamento entre o menu principal e o submenu */
+    text-align: center; /* Centraliza o conteúdo do submenu */
+}
+
+#sub-menu a {
+    color: black;
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+#sub-menu a:hover {
+    color: #CD784A; /* Alterar a cor ao passar o mouse */
+}
+#sub-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Faz com que a lista de itens ocupe apenas o espaço necessário */
+}
+
+
+#sub-menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-post-button {
+    display: block;
+    margin: 20px auto; /* Centraliza o botão na horizontal */
+    margin-right: 50px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-post-button:hover {
+    background-color: brown; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/*estilo pop-up add post*/
+/* Estilo para ocultar o pop-up inicialmente e para animar sua entrada e saída */
+/* Estilo para ocultar o pop-up inicialmente e para animar sua entrada e saída */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    display: none; /* Alteração da propriedade visibility para display */
+    opacity: 0;
+    z-index: 9999;
+}
+
+.overlay:target {
+    display: block; /* Alteração da propriedade visibility para display */
+    opacity: 1;
+}
+
+
+/* Estilo para o pop-up de adicionar novo post */
+#post-popup .wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #FFDAB9;
+    border-radius: 50px;
+    width: 60%;
+    max-width: 600px; /* Defina um tamanho máximo para o pop-up */
+    text-align: center;
+}
+
+#post-popup .wrapper h2 {
+    font-family: 'Best School', Arial, sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #CD784A;
+}
+
+#post-popup .wrapper p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#post-popup .wrapper .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #CD784A;
+    cursor: pointer;
+}
+
+#post-popup .container_voluntariado {
+    margin-top: 20px;
+}
+
+#post-popup form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#post-popup input[type=text],
+#post-popup textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #CD784A;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#post-popup input[type="submit"] {
+    background-color: #CD784A;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

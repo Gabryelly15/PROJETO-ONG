@@ -79,7 +79,7 @@ footer {
 }
 
 
-#whatsapp {
+#whatsapp0 {
     background-color: #25d366;
 }
 
@@ -162,4 +162,14 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
+}
+
+#whatsapp1 {
+    background-color: #25d366;
+    display: block;
+    margin: -10px auto 10px auto; /* Margem automática nas laterais para centralizar */
+    padding: 10px;
+    border-radius: 8px;
+    vertical-align: middle;
+    width: fit-content; /* Define a largura do elemento conforme o conteúdo */
 }
