@@ -103,7 +103,7 @@
     right: 10px; /* Ajuste conforme necessário */
 }
 
-#cartButton {
+#abrir-carrinho {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -112,7 +112,7 @@
     position: relative;
 }
 
-#cartButton img {
+#abrir-carrinho img {
     width: 50px; /* Ajuste conforme necessário */
     height: auto;
     margin-right: 5px; /* Ajuste conforme necessário */

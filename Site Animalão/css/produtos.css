@@ -45,7 +45,7 @@ main {
     margin-top: 50px; /* Adicionei margem superior aqui */
 }
 
-.container {
+.container-produto {
 
     margin-top: 40px;
     display: flex;
@@ -56,6 +56,8 @@ main {
     align-items: center;
 
 }
+
+
 
 .produto-imagem{
     height: 100%;
@@ -347,3 +349,100 @@ input[type="submit"]{
 .card-body .botao-padrao {
     margin-bottom: 10px; /* Adiciona um espaço entre o botão "comprar" e o botão "remover" */
 }
+
+
+
+/* João */
+
+.produtosdispostos{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.js-carrinho{
+
+    background-color: #CD784A;
+    /* margin-top: 50px; */
+    max-width: 600px;
+    max-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+
+    
+    
+}
+
+.js-carrinho-aberto{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.js-carrinho-fechado{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    opacity: 0;
+    
+    filter: blur(15px);
+    transform: translatex(250%);
+    transition: all 2s;
+}
+
+.js-cabecalho-carrinho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.js-produtos-carrinho{
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+
+    overflow-y: auto;
+    
+    
+}
+
+.js-card-prod-carrinho{
+    display: flex;
+
+    width: 100%; /* Garante que cada item ocupe toda a largura disponível */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor de cada item */
+    padding: 10px; /* Adiciona um preenchimento interno */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    display: flex; /* Para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+
+    
+    
+}
+
+.js-card-prod-carrinho img{
+    max-width: 100px; /* Limita a largura da imagem */
+    max-height: 100px; /* Limita a altura da imagem */
+    margin-right: 10px; /* Adiciona um espaço à direita da imagem */
+}
+
+
+
+
+.js-botao-quantidades{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    
+}
+
+
+
