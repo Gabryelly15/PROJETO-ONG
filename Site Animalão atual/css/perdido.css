@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.container1 h3{
+    font-family: 'Best School', Arial, sans-serif;
+    height: 9vh;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #CD784A;
+}
+  
+.container1 h4 {
+    font-family: 'Best School', Arial, sans-serif;
+    height: 9vh;
+    text-align: center;
+    font-weight: 300; /* Modifiquei o valor do font-weight */
+    font-size: 24px; /* Modifiquei o tamanho da fonte */
+    color: #CD784A;
+    margin-top: 0; /* Removi o espaçamento superior */
+    margin-bottom: 20px; /* Adicionei espaçamento inferior para separar dos elementos subsequentes */
+}
+  
+.container1 {
+    max-width: 1100px;
+    width: 95%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Isso centralizará o conteúdo dentro do contêiner */
+}
+
+.image-item1{
+    text-decoration: none;
+}
+  
+.image-item1 .texto1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #CD784A;
+    font-weight: bold;
+}
+  
+.image-item1 img:hover{
+    box-shadow:0 0 8px 4px #CD784A;
+}
+  
+.slider-wrapper1{
+    position: relative;
+}
+
+.slider-wrapper1 .slide-button1{
+    position:absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #CD784A;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-wrapper1 .slide-button1:hover {
+    background: #C9CFB5;
+}
+
+
+.slider-wrapper1 .slide-button1#prev-slide1{
+    left: -25px;
+    display: none;
+}
+
+.slider-wrapper1 .slide-button1#next-slide1{
+    right: -25px;
+}
+
+.slider-wrapper1 .image-list1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    height: 430px;
+}
+
+.slider-wrapper1 .image-list1::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper1 .image-list1 .image-item1 {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container1 .slider-scrollbar1 {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar1 .scrollbar-track1 {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.slider-scrollbar1 .scrollbar-thumb1:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar1:hover .scrollbar-track1{
+    height: 4px;
+}
+
+.slider-scrollbar1 .scrollbar-thumb1 {
+    position: absolute;
+    background: #CD784A;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+
+.slider-scrollbar1 .scrollbar-thumb1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+/* Styles for mobile and tablets */
+
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper1 .slide-button1 {
+    display: none !important;
+  }
+
+  .slider-wrapper1 .image-list1 {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper1 .image-list1 .image-item1 {
+    width: 280px;
+    height: 380px;
+  }
+
+  .slider-scrollbar1 .scrollbar-thumb1 {
+    width: 20%;
+  }
+}
+
+#whatsapp0 {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background:#7bf756;
+    border: 1px solid #25d366; /* Cor do contorno do botão */
+    outline: none;
+    transition: 0.3s ease-in-out; /* Tempo da transição */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 30px; /* Arredondamento do botão */
+    margin: 20px auto 20px; /* Centraliza horizontalmente e adiciona margem superior */
+}
+
+#whatsapp0:hover {
+    background: #128c7e; /* Cor de fundo alterada ao passar por cima */
+  }
+  
+  #whatsapp0 svg {
+    fill: none;
+    stroke: #fff; /* Cor do ícone */
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 0.3s ease-in-out; /* Tempo da transição */
+  }
+  
+  #whatsapp0:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  #whatsapp0 span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#whatsapp0 .fa-whatsapp {
+    font-size: 32px; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+  }

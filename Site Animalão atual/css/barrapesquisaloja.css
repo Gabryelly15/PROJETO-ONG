@@ -1,0 +1,33 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    margin-top: 18px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 400px; /* Largura da caixa de pesquisa */
+    margin-right: 30px; /* Espaçamento entre a caixa de pesquisa e o botão de busca */
+}
+
+.search-bar button {
+    margin-top: 5px;
+    color: #09a304; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    margin-left: -30px; /* Ajusta a posição do botão */
+    border-radius: 50%; /* Arredonda as bordas do botão */
+    padding: 5px; /* Adiciona espaçamento interno ao botão */
+}
+.search-button:hover {
+    color: #CD784A; /* Cor do texto ao passar o mouse */
+}
+
+
+.search-bar button img {
+    width: 25px; /* Ajuste o tamanho da imagem da lupa conforme necessário */
+    height: auto; /* Mantém a proporção */
+}

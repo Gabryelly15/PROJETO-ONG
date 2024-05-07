@@ -1,0 +1,22 @@
+ .label {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  width: 325px;
+  height: 400px;
+}
+
+.image-admin {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.label:hover{
+  box-shadow:0 0 8px 4px #CD784A;
+}
+
+
