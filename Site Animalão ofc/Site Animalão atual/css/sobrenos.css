@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+.section-valores{
+    background-color: #C9CFB5;
+}
+
+.missao, .visao, .valores{
+    border: solid 1px #FFF5EB;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    max-width: 26%;
+    padding: 15px;
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: box-shadow 0.3s ease;
+    background-color:#FFF5EB;
+
+}
+
+.valores-content:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9); 
+    
+}
+
+.missao h3, .visao h3, .valores h3{
+    color: #C9CFB5;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-valores h2{
+    color: #CD784A;
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Chewy', Arial, sans-serif;
+}
+
+.section-valores p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.invisivel-valores{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translatex(-100%);
+    transition: opacity 1s, transform 1s, filter 1s;
+}
+
+.visivel-valores{
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+    transition: opacity 1s, transform 1s, filter 1s;
+    
+}
+
+.acreditamos{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+.acreditamos :nth-child(2){
+    transition-delay: 1s;
+    
+}
+
+.acreditamos :nth-child(3){
+    transition-delay: 1.7s;
+}
+
+.mell, .luana, .elis, .loretana, .larissa{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+}
+h4{
+    margin-top: 50px;
+}
+
+.texto p{
+    padding: 0 30px 0 30px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.mell img, .luana img, .elis img, .loretana img, .larissa img{
+    max-width: 40%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.fundadoras{
+    text-align: center;
+}
+
+.time h3{
+    color: #CD784A;
+    font-size: 60px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Chewy', Arial, sans-serif;
+}
+
+.time h4{
+    color: #09a304;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.invisivel-time{
+    opacity: 0;
+    filter: blur(15px);
+    transition: opacity 1s, filter 1s;
+}
+
+.visivel-time{
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 1s, filter 1s;
+    
+}

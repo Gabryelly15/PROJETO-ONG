@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy', Arial, sans-serif;
+    background-color: #fff5eb;
+}
+
+#bannerblog {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+#bannerblog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(cachorro_carrosel3.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#menublog-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+#menublog {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#menublog a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+#menublog a:hover {
+    color: #CD784A;
+}
+
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 50px;
+    font-family: 'Chewy', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.post-card {
+    background-color: #fff5eb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    float: left;
+    margin-right: 20px;
+}
+
+.post-card:hover{
+    background-color: #dddddd98;
+}
+
+.post-card:last-child {
+    margin-right: 0;
+}
+
+.post-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-card h2 {
+    font-size: 20px;
+}
+
+.post-card p {
+    font-size: 14px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-footer button:hover {
+    color: red;
+}
+
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 800px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para os botões "Adicionar Novo Post" e "Alterar Post" */
+.button, .edit-post-button {
+    background-color: #CD784A;
+    color: #CD784A;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, .edit-post-button:hover {
+    background-color: #CD784A;
+}
+
+.post-footer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-footer button:hover {
+    color: red;
+}
+
+
+
+#novoPostButton a {
+    background-color: #CD784A;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; /* Adicionado para remover o sublinhado */
+    transition: background-color 0.3s ease;
+}
+
+#novoPostButton a:hover {
+    background-color: #9E5C1F;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Modificado para ocultar por padrão */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.wrapper {
+    background: #FFF5EB;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-height: 80vh; /* Define a altura máxima como 80% da altura da tela */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura máxima */
+    position: relative; /* Necessário para posicionar o botão dentro do wrapper */
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #CD784A;
+    text-decoration: none;
+}
+
+.wrapper h2 {
+    font-family: 'Best School', Arial, sans-serif;
+    text-align: center;
+    margin: 0 0 20px;
+    color: #CD784A;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #CD784A;
+    text-decoration: none;
+}
+
+.wrapper .content {
+    margin-top: 20px;
+}
+
+.container_post {
+    text-align: center;
+}
+
+.container_post label {
+    font-family: 'Best School', Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.container_post input[type="text"],
+.container_post input[type="file"],
+.container_post textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+.container_post input[type="submit"] {
+    background-color: #CD784A;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container_post input[type="submit"]:hover {
+    background-color: #9E5C1F;
+}
+
+.container_post textarea {
+    height: 150px;
+}
+
+#pagination-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#pagination-buttons button {
+    background-color: transparent;
+    color: #CD784A;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination-buttons button:hover {
+    background-color: #9e5c1f57;
+}
