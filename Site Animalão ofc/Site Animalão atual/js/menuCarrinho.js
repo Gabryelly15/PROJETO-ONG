@@ -1,6 +1,6 @@
 import { catalogo, salvarLocalStorage } from "./utilidades.js";
 
-const idsProdutoCarrinhoComQuantidade = {};
+export const idsProdutoCarrinhoComQuantidade = {};
 
 function abrirCarrinho() {
   document.getElementById("carrinho").classList.add("js-carrinho-aberto");
@@ -25,6 +25,7 @@ function removerDoCarrinho(idProduto) {
   salvarLocalStorage("carrinho", idsProdutoCarrinhoComQuantidade);
   atualizarPrecoCarrinho();
   renderizarProdutosCarrinho();
+  atualizarQtdCarrinho();
 }
 
 function incrementarQuantidadeProduto(idProduto) {
@@ -32,6 +33,7 @@ function incrementarQuantidadeProduto(idProduto) {
   salvarLocalStorage("carrinho", idsProdutoCarrinhoComQuantidade);
   atualizarPrecoCarrinho();
   atualizarInformacaoQuantidade(idProduto);
+  atualizarQtdCarrinho();
 }
 
 function decrementarQuantidadeProduto(idProduto) {
@@ -43,6 +45,7 @@ function decrementarQuantidadeProduto(idProduto) {
   salvarLocalStorage("carrinho", idsProdutoCarrinhoComQuantidade);
   atualizarPrecoCarrinho();
   atualizarInformacaoQuantidade(idProduto);
+  atualizarQtdCarrinho();
 }
 
 function atualizarInformacaoQuantidade(idProduto) {
@@ -172,4 +175,16 @@ export function atualizarPrecoCarrinho() {
         idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho];
     }
     precoCarrinho.innerText = `Total: $${precoTotalCarrinho}`;
+  }
+
+
+  export function atualizarQtdCarrinho() {
+    const QtdCarrinho = document.getElementById("cart-counter");
+    let QtdTotalCarrinho = 0;
+    for (const idProdutoNoCarrinho in idsProdutoCarrinhoComQuantidade) {
+      QtdTotalCarrinho +=
+      
+        idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho];
+    }
+    QtdCarrinho.innerText = QtdTotalCarrinho;
   }
