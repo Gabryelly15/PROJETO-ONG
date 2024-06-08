@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+main{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lista-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.divcadastro h2{
+    color: #CD784A;
+}
+
+h3{
+    color: #CD784A;
+}
+
+td {
+    
+    
+   
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .divcadastro{
+    background-color: #a9b8a4;
+    border-radius: 25px;
+    max-width: 90%;
+    padding: 20px;
+    font-size: small;
+    margin-top: 50px;
+  }
+
+  .fw-bold {
+    font-size: 30px;
+    font-family: 'Chewy', Arial, sans-serif;
+    color: #CD784A;
+
+}
+
+h1 .fw-bold1  {
+    font-size: 50px;
+    font-family: 'Chewy', Arial, sans-serif;
+    color: #CD784A;
+
+}
+
+.exclusao{
+    color: #CD784A;
+}
