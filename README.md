@@ -6,3 +6,6 @@ JOÃO VICTOR JAFET FRANCISCO DOS SANTOS - RA 923102302
 RAFAEL DE MELO NERI DOS SANTOS - RA 923113089
 RAMON RODRIGUES GULO - RA 1423104027
 VICTOR DE JESUS MIRANDA SILVA - RA 923105628
+
+Link do vídeo de apresentação: https://youtu.be/HYaqIQEbnTk
+Link da hospedagem do site: https://mansaoanimalao.com/
