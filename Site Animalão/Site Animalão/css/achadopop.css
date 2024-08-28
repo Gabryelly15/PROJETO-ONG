@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.box-cadastro-animal {
+    text-align: center;
+    margin: 30px;
+}
+
+.button-cadastro-animal {
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-cadastro-animal:hover {
+    background-color: #e68900;
+}
+
+.overlay-cadastro-animal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.overlay-cadastro-animal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper-cadastro-animal {
+    background-color: #ffdab9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper-cadastro-animal h2 {
+    margin-top: 0;
+}
+
+.close-cadastro-animal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.container-animais {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-animais label {
+    margin: 10px 0 5px;
+}
+
+.container-animais input[type="text"],
+.container-animais input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.image-upload {
+    display: grid; 
+    gap: 18px; 
+    font-size: 0; 
+    list-style: none; 
+    margin-bottom: 30px; 
+    width: 325px; 
+    height: 400px; 
+    text-align: center;
+}
+
+.upload-placeholder {
+    width: 100%;
+    height: 122%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68900;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+.minha-div {
+    /* margin-top: 70px; */
+    background-color: #FFF5EB; /* Apenas para visualização */
+    height: 50px; /* Apenas para visualização */
+}
+
+/*historia*/
+
+/* Estilos para a imagem e o texto */
+.imagem-historia img {
+    width: 80%;
+    height: 50%;
+}
+
+.texto-historia {
+    padding: 0 10px;
+    /* font-size: 8px; Reduzindo o tamanho do texto */
+}
+
+/* para ajustar em telas menores */
+@media (max-width: 767px) {
+    .imagem-historia img {
+        width: 100%; /* Para telas menores, pra imagem ocupar 100% da largura */
+    }
+
+    .texto-historia {
+        text-align: center; /* Centraliza o texto em telas menores */
+        /* font-size: 4px; Reduz o tamanho do texto em telas menores */
+    }
+}
+
+.texto-historia h2 {
+    color: #09a304; /* Cor dos títulos */
+    text-align: center;
+}
+
+/* Adicionar espaçamento entre o header_fino e o título "Nossa história" */
+#historia1 {
+    padding-top: 50px; /* Adiciona espaçamento interno acima do conteúdo */
+    padding-bottom: 80px;
+
+}
+
+/* ajuste do espaçamento interno entre o título e o texto */
+#historia1 h2 {
+    margin-bottom: 50px; /* Exemplo de ajuste para o título */
+    font-family: 'Chewy', Arial, sans-serif;
+    font-size: 52px;
+}
+
+/* ajuste do espaçamento interno entre o texto e o rodapé */
+#historia1 p {
+    margin-bottom: 50px; /* Exemplo de ajuste para o texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:24px;
+    text-align:justify;
+}
+
+#historia2 {
+    padding-top: 80px; /* Adiciona espaçamento interno acima do conteúdo */
+    padding-bottom: 80px;
+
+
+}
+
+#historia2 h2 {
+    margin-bottom: 50px; /* Exemplo de ajuste para o título */
+    font-family: 'Chewy', Arial, sans-serif;
+    font-size: 52px;
+}
+#historia2 p {
+    margin-bottom: 50px; /* Exemplo de ajuste para o texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.sobreinicio{
+    background-color: #FFF5EB;
+}
+
+#historia3 h2 {
+    margin-bottom: 50px; /* Exemplo de ajuste para o título */
+    font-family: 'Chewy', Arial, sans-serif;
+    font-size: 52px;
+}
+#historia3 p {
+    margin-bottom: 50px; /* Exemplo de ajuste para o texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    text-align: justify;
+
+}
+
+
+
+
