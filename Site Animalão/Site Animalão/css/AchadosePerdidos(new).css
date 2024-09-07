@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adicionando body2 para encapsular o novo estilo */
+.body2 {
+  font-family: Arial, sans-serif;
+  background-color: #fff5eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.body2 .slides {
+  display: none; /* Todos os slides começam escondidos */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.body2 .slides img {
+  max-width: 100%; /* A imagem ajusta-se ao tamanho do slide */
+  height: auto;    /* Mantém a proporção da imagem */
+  border-radius: 16px; /* Bordas arredondadas para a imagem */
+}
+
+.body2 .slides .title {
+  font-size: 24px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.body2 .slides .content {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #666;
+  padding: 0 16px; /* Margem interna para que o texto tenha espaço */
+}
+
+.body2 .container-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 400px;
+  height: 600px;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.body2 .prev-new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: #D41D1D;
+  text-decoration: none;
+}
+
+.body2 .prev-text {
+  margin-top: 4px;
+}
+
+.body2 .title {
+  font-size: 28px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.body2 .content {
+  width: 200px;
+  text-align: center;
+}
+
+.body2 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.body2 .button {
+  background-color: #eb9a66;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.body2 .dot-box {
+  text-align: center;
+}
+
+.body2 .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .6s ease;
+}
+
+.body2 .active, body2 .dot:hover {
+  background-color: #eb9a66;
+}
+
+.body2 .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2;}
+  to {opacity: 1;}
+}

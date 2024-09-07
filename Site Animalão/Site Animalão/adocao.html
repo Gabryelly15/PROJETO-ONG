@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/sobrenos.css">
         <link rel="stylesheet" href="css/sobrenos2.css">
         <link rel="stylesheet" href="css/voluntariado.css">
-        <link rel="stylesheet" href="css/perdido.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="./" type="image/x-icon">
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
@@ -35,6 +34,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
         <script src="js/inputadocao.js" defer></script>
         <link rel="stylesheet" href="css/preloader.css">
+        <link rel="stylesheet" href="css/AchadosePerdidos(new).css">
   </head>
   <body>
     <div id="preloader"></div>
@@ -263,124 +263,46 @@
     </section>
 </section>
 
-<!-- Achados e perdidos - prototipo Victor-->
-<section class="adocaomain1">
-    <div class="container1">
-        <h3>Achados e Perdidos!</h3>
-        <p>Quer registrar seu animalzinho perdido, ou encontrou algum destes pets? </p>
-        <p>Entre em contato conosco: </p>
-        <a href="https://wa.me/5511991501521?text=Ol%C3%A1+Gostaria+de+entrar+em+contato+para+informar+que+encontrei+um+pet.%F0%9F%90%95" class="footer-link" id="whatsapp0">
-            <i class="fa-brands fa-whatsapp"></i>
+<!-- ENCERRA PARTE DA GABY 🔝-->
+<!-- --------------------------->
+<!--COMEÇA O ACHADOS E PERDIDOS DO VICTOR-->
+
+<div class="body2">
+    <div class="container-new">
+        <a class="prev-new" onclick="addSlides(-1)">
+        <span>&#10094;</span>
+        <span class="prev-text">Voltar</span>
         </a>
-        <div class="slider-wrapper1">
-            <button id="prev-slide1" class="slide-button1 material-symbols-rounded">chevron_left</button>
-            <div class="image-list1">
-                    <a href="#div11" class="image-item1"><img class="image-item1" src="imagem/img1.jpg" alt="img-1"><h1 class="texto1">Pipoca</h1></a>
-                    <a href="#div12" class="image-item1"><img class="image-item1" src="imagem/img2.jpg" alt="img-2"><h1 class="texto1">Bolinha</h1></a>
-                    <a href="#div13" class="image-item1"><img class="image-item1" src="imagem/img3.jpg" alt="img-3"><h1 class="texto1">Thor</h1></a>
-                    <a href="#div14" class="image-item1"><img class="image-item1" src="imagem/img4.jpg" alt="img-4"><h1 class="texto1">Bethoven</h1></a>
-                    <a href="#div15" class="image-item1"><img class="image-item1" src="imagem/img5.jpg" alt="img-5"><h1 class="texto1">Laila</h1></a>
-                    <a href="#div16" class="image-item1"><img class="image-item1" src="imagem/img6.jpg" alt="img-6"><h1 class="texto1">Lili</h1></a>
-                    <a href="#div17" class="image-item1"><img class="image-item1" src="imagem/img7.jpg" alt="img-7"><h1 class="texto1">Matias</h1></a>
-                    <a href="#div18" class="image-item1"><img class="image-item1" src="imagem/img8.jpg" alt="img-8"><h1 class="texto1">Bernardo</h1></a>
-                    <a href="#div19" class="image-item1"><img class="image-item1" src="imagem/img9.jpg" alt="img-9"><h1 class="texto1">Algodão</h1></a>
-                    <a href="#div20" class="image-item1"><img class="image-item1" src="imagem/img10.jpg" alt="img-10"><h1 class="texto1">José</h1></a>
-            </div>
-            <button id="next-slide1" class="slide-button1 material-symbols-rounded">chevron_right</button>
+        <div>
+        <div class="slides fade">
+            <img src="imagem/Exemplo_Perdidos.png">
+            <h2 class="title">chihuahua</h2>
+            <p class="content">chihuahua, 2 aninhos, resgatado de um dono abusivo</p>
         </div>
-        <div class="slider-scrollbar1">
-            <div class="scrollbar-track1">
-                <div class="scrollbar-thumb1"></div>
-            </div>
+        <div class="slides fade">
+            <img src="imagem/Exemplo_Perdidos2.jpg">
+            <h2 class="title">Puddle</h2>
+            <p class="content">Branco como a neve, foi encontrado em nossa porta</p>
         </div>
-    </div>
-
-    <div class="overlay" id="div11">
-        <div class="wrapper">
-            <h2>Pipoca</h2>
-            <p>Lulu da pomerânia, 2 aninhos.</p>
-            <a href="#" class="close">&times;</a>
+        <div class="slides fade">
+            <img src="imagem/Exemplo_Perdidos2.jpg">
+            <h2 class="title">EXEMPLO3</h2>
+            <p class="content">As vezes mexer com css me irrita<br/><br/>
+            <span>(Mansão animalão)</span>
+            </p>
         </div>
-    </div>    
-
-    <div class="overlay" id="div12">
-      <div class="wrapper">
-          <h2> Bolinha</h2>
-          <p>Huskey tomar no cu, 4 aninhos.</p>
-          <a href="#" class="close">&times;</a>
-      </div>
-  </div>   
-
-  <div class="overlay" id="div13">
-    <div class="wrapper">
-        <h2>Thor</h2>
-        <p>Yokishire, 1 aninho.</p>
-        <a href="#" class="close">&times;</a>
+        </div>
+        <div class="footer">
+        <button class="button" onclick="addSlides(1)">Próximo</button>
+        <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+        <script src="js/AchadosePerdidos(new).js"></script>
     </div>
-</div>   
-
-    <div class="overlay" id="div14">
-    <div class="wrapper">
-        <h2>Bethoven</h2>
-        <p>Yokishire, 3 meses.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div15">
-    <div class="wrapper">
-        <h2>Laila</h2>
-        <p>Golden, 4 aninhos.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div16">
-    <div class="wrapper">
-        <h2>Lili</h2>
-        <p>Gatinha, 1 aninho.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div17">
-    <div class="wrapper">
-        <h2>Matias</h2>
-        <p>Gatinho, 5 aninhos.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div18">
-    <div class="wrapper">
-        <h2>Bernardo</h2>
-        <p>Gatinho, 7 aninhos.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div19">
-    <div class="wrapper">
-        <h2>Algodão</h2>
-        <p>Gatinha, 2 meses.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-
-    <div class="overlay" id="div20">
-    <div class="wrapper">
-        <h2>José</h2>
-        <p>Gatinho, 2 aninhos.</p>
-        <a href="#" class="close">&times;</a>
-    </div>
-    </div>  
-    </main>
-    </section>
-
-<section class="voluntariado">
-
-
-    <!-- FINALIZA SLIDERS ADOÇÃO - PARTE GABY-->
+</div>
 
     <footer>
       <div id="footer_content">
@@ -392,7 +314,6 @@
                   <a href="https://www.instagram.com/mansao.animalao/" class="footer-link" id="instagram">
                       <i class="fa-brands fa-instagram"></i>
                   </a>
-
 
                   <a href="https://wa.me/5511991501521?text=Ol%C3%A1+gostaria+de+adotar+um+Pet+%F0%9F%90%95" class="footer-link" id="whatsapp">
                       <i class="fa-brands fa-whatsapp"></i>
