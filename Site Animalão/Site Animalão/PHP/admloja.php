@@ -18,28 +18,28 @@ include("conexao.php");
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./" type="image/x-icon">
-        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
         <title>Mansão Animalão</title>
         <!-- <link rel="stylesheet" href="css/about.css"> -->
-        <link rel="stylesheet" href="css/headerloja.css">
-        <link rel="stylesheet" href="css/faixa.css">
-        <link rel="stylesheet" href="css/adocao.css">
-        <link rel="stylesheet" href="css/rodape.css">
+        <link rel="stylesheet" href="../css/headerloja.css">
+        <link rel="stylesheet" href="../css/faixa.css">
+        <link rel="stylesheet" href="../css/adocao.css">
+        <link rel="stylesheet" href="../css/rodape.css">
         <!-- <link rel="stylesheet" href="css/produtos.css"> -->
-        <link rel="stylesheet" href="css/produtosajustados.css">
-        <link rel="stylesheet" href="css/admloja.css">
-        <link rel="stylesheet" href="css/menul.css">
-        <link rel="stylesheet" href="css/barrapesquisaloja.css">
-        <link rel="stylesheet" href="css/nextpagebar.css">
+        <link rel="stylesheet" href="../css/produtosajustados.css">
+        <link rel="stylesheet" href="../css/admloja.css">
+        <link rel="stylesheet" href="../css/menul.css">
+        <link rel="stylesheet" href="../css/barrapesquisaloja.css">
+        <link rel="stylesheet" href="../css/nextpagebar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <script src="js/menulateral.js" defer></script>
-        <script src="js/menususp.js" defer></script>
-        <script src="js/nextpage.js" defer></script>
-        <script src="js/barrapesquisa.js" defer></script>
-        <script src="js/cadastroprodutos.js" defer></script>
-        <link rel="shortcut icon" href="./" type="image/x-icon">
-        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <script src="../js/menulateral.js" defer></script>
+        <script src="../js/menususp.js" defer></script>
+        <script src="../js/nextpage.js" defer></script>
+        <script src="../js/barrapesquisa.js" defer></script>
+        <script src="../js/cadastroprodutos.js" defer></script>
+        <link rel="shortcut icon" href="../" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
             rel="stylesheet"
             integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
@@ -68,10 +68,10 @@ include("conexao.php");
     <header>
         <div class="container-logo">
             <div class="logo-imagem">
-                <img src="./imagem/Logo Preto.png" style="width: 55px; height: 55px;">
+                <img src="../imagem/Logo Preto.png" style="width: 55px; height: 55px;">
             </div>
             <div class="title-image">
-                <a href="Index.html" class="header-link"><img src="https://fontmeme.com/permalink/240324/f5d00cad0b996bfa45075ad72ebce4ab.png" alt="fonte-best-school" style="pointer-events: none;"></a>
+                <a href="../Index.html" class="header-link"><img src="https://fontmeme.com/permalink/240324/f5d00cad0b996bfa45075ad72ebce4ab.png" alt="fonte-best-school" style="pointer-events: none;"></a>
             </div>
             
         </div><!-- Termina o Conatiner.logo-->
@@ -80,11 +80,11 @@ include("conexao.php");
 
             <div class="menu">
                 <ul>
-                    <li><a href="Index.html">Pagina Inicial</a></li>
-                        <li><a href="#sobre-nos">Sobre Nós</a></li>
-                        <li><a href="adocao.html">Adote</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="loja.html">Loja</a></li>
+                    <li><a href="../Index.html">Pagina Inicial</a></li>
+                        <li><a href="../sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="../adocao.html">Adote</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="loja.php">Loja</a></li>
                         <li><a href="#footer_content">Contatos</a></li>
                         
                     
