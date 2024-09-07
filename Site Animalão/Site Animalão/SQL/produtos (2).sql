@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/09/2024 às 21:19
+-- Tempo de geração: 07/09/2024 às 22:54
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `nome` varchar(60) NOT NULL,
-  `preco` decimal(5,0) NOT NULL,
+  `preco` double(5,2) NOT NULL,
   `imagem` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -39,13 +39,13 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `preco`, `imagem`) VALUES
-(2, 'Ecobag de algodão crú', 25, '../imagem/ecobag.jpeg'),
-(53, 'Tapetinho de pano em forma de ossinho - Abelha', 40, '../imagem/tapeteamarelo.jpeg'),
-(63, 'Melhor amigo', 78, '../imagem/img4.jpg'),
-(67, 'Coração anatômico de pelúcia', 45, '../imagem/coracaoanatomico.jpeg'),
-(68, 'Tapetinho de pano em forma de ossinho - Onça', 40, '../imagem/tapetebranco.jpeg'),
-(69, 'Tapetinho de pano em forma de ossinho - Nuvens', 40, '../imagem/tapetecinza.jpeg'),
-(74, 'air', 300, '../imagem/air sem fundo.png');
+(2, 'Ecobag de algodão crú', 25.00, '../imagem/ecobag.jpeg'),
+(53, 'Tapetinho de pano em forma de ossinho - Abelha', 40.00, '../imagem/tapeteamarelo.jpeg'),
+(63, 'Melhor amigo', 78.00, '../imagem/img4.jpg'),
+(67, 'Coração anatômico de pelúcia', 45.00, '../imagem/coracaoanatomico.jpeg'),
+(68, 'Tapetinho de pano em forma de ossinho - Onça', 40.00, '../imagem/tapetebranco.jpeg'),
+(69, 'Tapetinho de pano em forma de ossinho - Nuvens', 40.00, '../imagem/tapetecinza.jpeg'),
+(75, 'air', 291.00, '../imagem/download (1).jpeg');
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +65,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

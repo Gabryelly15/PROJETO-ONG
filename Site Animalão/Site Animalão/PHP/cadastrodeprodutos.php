@@ -19,6 +19,7 @@ $preco = $_POST['preco'];
 
 
 
+
 // Upload da imagem
 $target_dir = "../imagem/";
 $target_file = $target_dir . basename($_FILES["imagem"]["name"]);
