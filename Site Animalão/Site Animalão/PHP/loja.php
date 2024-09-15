@@ -2,6 +2,7 @@
 
 include("conexao.php");
 
+
 session_start();
 
 // Inicializar carrinho se não existir
@@ -62,15 +63,31 @@ if (isset($_GET['aumentar'])) {
 
  
 
- //criando variável com texto da pesquisa
- 
- $pesquisa1 = $_POST['pesquisa'];
- 
+
 
 // Consulta SQL para selecionar os dados
-$sql1 = "SELECT * FROM produtos";
 
-$sql = "SELECT * FROM produtos WHERE nome LIKE '%$pesquisa1%'";
+/*if($pesquisa1 != null){
+    $sql = "SELECT * FROM produtos WHERE nome LIKE '%$pesquisa1%'";
+}else{
+    
+    $sql = "SELECT * FROM produtos";
+}*/
+
+
+
+if(isset($_POST['pesquisa']))  { 
+    $pesquisa1 = $_POST['pesquisa'];
+    $sql = "SELECT * FROM produtos WHERE nome LIKE '%$pesquisa1%'";
+   
+}else{
+    
+    $sql = "SELECT * FROM produtos";
+}
+
+
+
+
 
 // Executa a consulta
 $result = $conn->query($sql);
