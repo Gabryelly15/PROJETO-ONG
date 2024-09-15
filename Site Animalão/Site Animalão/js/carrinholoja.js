@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
@@ -23,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'carrinho.html';
     });
 });
+
+
 // Impedir a rolagem automática da tela para o ícone do carrinho quando o botão "comprar" for clicado
 function stopScrollToCartOnBuy() {
     window.addEventListener("load", function() {

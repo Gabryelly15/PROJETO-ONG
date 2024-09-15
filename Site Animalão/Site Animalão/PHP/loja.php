@@ -60,11 +60,17 @@ if (isset($_GET['aumentar'])) {
 
 
 
+ 
 
-
+ //criando variável com texto da pesquisa
+ 
+ $pesquisa1 = $_POST['pesquisa'];
+ 
 
 // Consulta SQL para selecionar os dados
-$sql = "SELECT * FROM produtos";
+$sql1 = "SELECT * FROM produtos";
+
+$sql = "SELECT * FROM produtos WHERE nome LIKE '%$pesquisa1%'";
 
 // Executa a consulta
 $result = $conn->query($sql);
@@ -212,13 +218,37 @@ if ($result->num_rows > 0) {
 
     <h1 id="Titulo-loja" class="fw-bold">Produtos para seu pet!</h1>
 
-    <div class="search-bar">
+    <!---<div class="search-bar">
         <input type="text" id="searchInput" placeholder="Pesquisar...">
         <button type="button" id="searchButton">
             <img src="../imagem/lupa.png" alt="Buscar" style="width: 20px; height: 20px;">
             <span>BUSCAR</span>
         </button>
+    </div>--->
+
+
+
+<form action="loja.php" method="post">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar..." name="pesquisa">
+        <!--<input type="submit" id="searchButton1"><img src="../imagem/lupa.png" alt="Buscar" style="width: 20px; height: 20px;">
+        <span>BUSCAR</span>-->
+
+        
+
+
+        <button type="submit"><img src="../imagem/lupa.png" alt="Buscar" style="width: 20px; height: 20px; margin-right: 12px;"></button>
+
+        <button type="submit"><span>BUSCAR</span></button>
+
+        <!--<button type="submit" id="searchButton">
+            <img src="../imagem/lupa.png" alt="Buscar" style="width: 20px; height: 20px;">
+            <span>BUSCAR</span>
+        </button>-->
     </div>
+
+
+</form>
 
 
 
@@ -447,9 +477,11 @@ foreach ($_SESSION['carrinho'] as $produto_id => $quantidade) {
 <script type="module" src="../js/cartaoproduto.js"></script>
 <script type="module" src="../js/menuCarrinho.js"></script>
 <script type="module" src="../js/carrinho.js"></script>
+<!---<script type="module" src="../js/carrinholoja.js"></script>--->
 
 
 
 
 </body>
 </html>
+
