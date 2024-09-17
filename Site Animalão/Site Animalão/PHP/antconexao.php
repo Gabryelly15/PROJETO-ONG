@@ -11,7 +11,7 @@ $consulta = "SELECT * FROM produtos";
 $con = $mysqli -> query($consulta) or die ($mysqli -> error);
 
 
-While($dado = $con -> fetch_array()){ 
+While($dado = $con -> fetch_array()){
 
     $id = $dado['id'];
     $nome = $dado['nome'];
@@ -21,9 +21,9 @@ While($dado = $con -> fetch_array()){
 
 
 
-echo "O id é: " . $id; 
-echo "    O nome é: " . $nome; 
-echo "    O preço é: " . $preco; 
+echo "O id é: " . $id;
+echo "    O nome é: " . $nome;
+echo "    O preço é: " . $preco;
 echo "    A imagem é: " . $imagem;
 
 }
