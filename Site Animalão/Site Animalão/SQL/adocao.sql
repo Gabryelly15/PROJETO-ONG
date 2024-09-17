@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/06/2024 às 20:48
+-- Tempo de geração: 17/09/2024 às 21:12
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `casa animalão`
+-- Banco de dados: `mansao animalao`
 --
 
 -- --------------------------------------------------------
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `adoção` (
-  `Nomeproduto` int(255) DEFAULT NULL,
-  `Valorproduto` int(255) DEFAULT NULL,
-  `imagemads` blob DEFAULT NULL
+  `NomeAds` varchar(50) NOT NULL,
+  `descricaoAds` varchar(500) NOT NULL,
+  `imagemads` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 
