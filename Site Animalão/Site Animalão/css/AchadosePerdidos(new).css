@@ -10,8 +10,50 @@
   background-color: #fff5eb;
   display: flex;
   justify-content: center;
+  flex-direction: column; 
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
+}
+
+.body2 .menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.body2 .menu button {
+  background-color: #eb9a66;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.body2 .menu button:hover {
+  background-color: #d86f4a;
+}
+
+.body2 .titulo {
+  text-align: center; /* Centraliza o texto dentro do container */
+  margin-bottom: 30px; /* Espaço entre o título e o carrossel */
+}
+
+.body2 .titulo h3 {
+  font-family: 'Chewy', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 38px; /* Tamanho do texto */
+  font-weight: bold; /* Negrito */
+  color: #eb9a66; /* Cor */
+  margin: 0; /* Remove margens adicionais se necessário */
+}
+
+.body2 .titulo p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px; /* Tamanho do texto */
+  font-weight: bold;
+  color: #666; /* Cor */
+  margin: 0; /* Remove margens adicionais se necessário */
 }
 
 .body2 .slides {
@@ -23,9 +65,10 @@
 }
 
 .body2 .slides img {
-  max-width: 100%; /* A imagem ajusta-se ao tamanho do slide */
-  height: auto;    /* Mantém a proporção da imagem */
-  border-radius: 16px; /* Bordas arredondadas para a imagem */
+  width: 100%; /* Garantir que a imagem ocupe toda a largura disponível */
+  height: auto; /* Manter a proporção da imagem */
+  display: block; /* Remove o espaço abaixo da imagem causado pelo comportamento inline */
+  object-fit: cover; /* Ajusta o conteúdo da imagem para caber no container */
 }
 
 .body2 .slides .title {
@@ -36,10 +79,10 @@
 }
 
 .body2 .slides .content {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 8px;
   color: #666;
-  padding: 0 16px; /* Margem interna para que o texto tenha espaço */
+  padding: 0 13px; /* Margem interna para que o texto tenha espaço */
 }
 
 .body2 .container-new {
@@ -118,9 +161,10 @@
 .body2 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+  animation-fill-mode: forwards; /* Mantém o estado final da animação */
 }
 
 @keyframes fade {
-  from {opacity: .2;}
+  from {opacity: 0.2;}
   to {opacity: 1;}
 }

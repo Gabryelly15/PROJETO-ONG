@@ -268,88 +268,108 @@
 <!--COMEÇA O ACHADOS E PERDIDOS DO VICTOR-->
 
 <div class="body2">
-    <div class="container-new">
-        <a class="prev-new" onclick="addSlides(-1)">
-        <span>&#10094;</span>
-        <span class="prev-text">Voltar</span>
-        </a>
-        <div>
-        <div class="slides fade">
-            <img src="imagem/Exemplo_Perdidos.png">
-            <h2 class="title">chihuahua</h2>
-            <p class="content">chihuahua, 2 aninhos, resgatado de um dono abusivo</p>
+        <div class="titulo">
+            <h3>Encontre ou Anuncie seu bichinho perdido!</h3>
+            <p>"Clique em um para ser redirecionado no WhatsApp e entre em contato!"</p>
         </div>
-        <div class="slides fade">
-            <img src="imagem/Exemplo_Perdidos2.jpg">
-            <h2 class="title">Puddle</h2>
-            <p class="content">Branco como a neve, foi encontrado em nossa porta</p>
+
+        <!-- Mini Menu -->
+        <div class="menu">
+            <button onclick="redirecionarWhatsApp('anunciar')">Anunciar meu bichinho</button>
+            <button onclick="redirecionarWhatsApp('encontrar')">Encontrei meu bichinho</button>
         </div>
-        <div class="slides fade">
-            <img src="imagem/Exemplo_Perdidos2.jpg">
-            <h2 class="title">EXEMPLO3</h2>
-            <p class="content">As vezes mexer com css me irrita<br/><br/>
-            <span>(Mansão animalão)</span>
-            </p>
+
+        <div class="container-new">
+            <!-- Slide 1 -->
+            <div class="slides fade">
+                <img src="imagem/Exemplo_Perdidos.png" alt="Clique para adotar">
+                <h2 class="title">Chihuahua</h2>
+                <p class="content">Chihuahua, 2 aninhos, foi encontrado semi morto pelo frio. Estava com uma coleira rasgada, aparentando ter dono</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slides fade">
+                <img src="imagem/Exemplo_Perdidos2.jpg" alt="Clique para adotar">
+                <h2 class="title">Puddle</h2>
+                <p class="content">Branco como a neve, foi encontrado em nossa porta em um saquinho. Estamos procurando o dono!</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slides fade">
+                <img src="imagem/Exemplo_Perdidos3.jpg" alt="Clique para adotar">
+                <h2 class="title">Sandman</h2>
+                <p class="content">Preguiçoso, foi achado abandonado em um hotel com a coleira amarrada a uma pilastra.<br/><br/><span>(Mansão Animalão)</span></p>
+            </div>
         </div>
-        </div>
+
         <div class="footer">
-        <button class="button" onclick="addSlides(1)">Próximo</button>
-        <div class="dot-box">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        </div>
-        <script src="js/AchadosePerdidos(new).js"></script>
-    </div>
-</div>
-
-    <footer>
-      <div id="footer_content">
-          <div id="footer_contacts">
-              <h1>Mansão Animalão</h1>
-              <p>Preservando a vida de nossos bichinhos</p>
-
-              <div id="footer_social_media">
-                  <a href="https://www.instagram.com/mansao.animalao/" class="footer-link" id="instagram">
-                      <i class="fa-brands fa-instagram"></i>
-                  </a>
-
-                  <a href="https://wa.me/5511991501521?text=Ol%C3%A1+gostaria+de+adotar+um+Pet+%F0%9F%90%95" class="footer-link" id="whatsapp">
-                      <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-              </div>
-          </div>
-
-          <div id="footer_subscribe">
-            <h3>Se inscreva!</h3>
-            <p>Clique aqui para se cadastrar no nosso site, ou fazer login se já tem uma conta!</p>
-            <div id="input_group">
-                <button id="subscribe_button">
-                    <i class="fa-regular fa-envelope"></i>
-                </button>
+            <button class="button" onclick="addSlides(1)">Próximo</button>
+            <div class="dot-box">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>
 
+    <script src="js/AchadosePerdidos(new).js"></script>
+    
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Mansão Animalão</h1>
+                <p>Preservando a vida de nossos bichinhos</p>
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/mansao.animalao/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511991501521?text=Ol%C3%A1+gostaria+de+adotar+um+Pet+%F0%9F%90%95" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+                <p>Clique aqui para se cadastrar no nosso site, ou fazer login se já tem uma conta!</p>
+                <div id="input_group">
+                    <button id="subscribe_button">
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function redirecionarWhatsApp(tipo) {
+                let mensagem = "";
+                if (tipo === 'encontrar') {
+                    mensagem = "Olá, gostaria de anunciar que o pet (Substitua pelo nome do seu pet aqui) está no perdidos de vocês e gostaria de recuperá-lo!";
+                } else if (tipo === 'anunciar') {
+                    mensagem = "Olá, gostaria de anunciar meu bichinho perdido, ou anunciar que encontrei um! Podem me ajudar?";
+                }
+
+                // Redireciona para o WhatsApp com a mensagem específica
+                let numeroWhatsApp = "5511991501521"; // Substitua pelo número desejado
+                let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+                window.open(url, '_blank');
+            }
+        </script>
+
+        <script>
+            document.getElementById("subscribe_button").addEventListener("click", function() {
+                // Redirecionar para a página de cadastro
+                window.location.href = "cadastrologin.html";
+            });
+        </script>
+
+        <div id="footer_copyright">
+            &#169; 2024 todos os direitos reservados
+        </div>
+    </footer>
     <script>
-        document.getElementById("subscribe_button").addEventListener("click", function() {
-            // Redirecionar para a página de cadastro
-            window.location.href = "cadastrologin.html";
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
         });
     </script>
-
-      <div id="footer_copyright">
-          &#169
-          2024 todos os direitos reservados
-      </div>
-  </footer>
-  <script>
-    var loader = document.getElementById("preloader");
-
-    window.addEventListener("load", function () {
-        loader.style.display = "none";
-    })
-</script>
-  </body>
+</body>
 </html>
