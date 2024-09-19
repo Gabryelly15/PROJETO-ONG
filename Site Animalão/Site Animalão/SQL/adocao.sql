@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `adoção` (
   `NomeAds` varchar(50) NOT NULL,
   `descricaoAds` varchar(500) NOT NULL,
-  `imagemads` blob NOT NULL
+  `imagemAds` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 

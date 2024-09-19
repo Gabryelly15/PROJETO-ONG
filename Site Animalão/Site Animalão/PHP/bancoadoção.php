@@ -13,9 +13,9 @@ if ($conn->connect_error) {
 
 $NomeAds = $_POST['NomeAds'];
 $descricaoAds = $_POST['descricaoAds'];
-$imagemads = $_FILES['imagemads'];
+$imagemAds = $_FILES['imagemAds'];
 
-$sql = "INSERT INTO adoção (NomeAds, descricaoAds, imagemads) VALUES ('$NomeAds', '$descricaoAds', '$imagemads')";
+$sql = "INSERT INTO adoção (NomeAds, descricaoAds, imagemAds) VALUES ('$NomeAds', '$descricaoAds', '$imagemAds')";
 
 
 if ($conn->query($sql) === TRUE) {
