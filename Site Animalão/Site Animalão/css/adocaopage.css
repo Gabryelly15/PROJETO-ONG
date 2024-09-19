@@ -71,6 +71,12 @@
   box-shadow:0 0 8px 4px #CD784A;
 }
 
+.fotoadm{
+  align-items: center;
+  text-align: center;
+  padding-left: 26%;
+}
+
 
 .slider-wrapper .slide-button {
   position:absolute;
