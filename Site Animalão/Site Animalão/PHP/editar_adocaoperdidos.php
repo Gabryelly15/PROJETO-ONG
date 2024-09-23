@@ -1,3 +1,11 @@
+<?php
+
+include 'bancoadoção.php';
+
+echo $id = $_GET['id']
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -82,20 +90,35 @@
         <a href="#" class="close">&times;</a>
         <div class="content">
             <div class="container_produtos">
-                <form action="PHP\bancoadoção.php" method="POST" enctype="multipart/form-data">
+                <form action="atualizar_adocaoperdidos.php" method="POST" enctype="multipart/form-data">
+                    <?php
+
+                    $sql = "SELECT * FROM `adoção` WHERE id_adocao = $id";
+                    $buscar = mysql_query($conn,$sql);
+
+                    while($array = mysql_fetch_array($buscar)) {
+                        $id_adocao = $array['id_adocao'];
+                        $NomeAds = $array['NomeAds'];
+                        $descricaoAds = $array['descricaoAds'];
+                        $imagemads = $array['imagemads'];
+
+                    ?>
+
                     <label for="NomeAds">Nome do Bichinho:</label>
-                    <input type="text" id="NomeAds" name="NomeAds" required>
+                    <input type="text" id="NomeAds" name="NomeAds" value="<?php echo $NomeAds?>" required>
+                    <input type="text" id="NomeAds" name="id" value="<?php echo $id ?>" style="display: none">
                     <label for="descricaoAds">Descrição do bichinho:</label>
-                    <input type="text" id="descricaoAds" name="descricaoAds" required>
+                    <input type="text" id="descricaoAds" name="descricaoAds" value="<?php echo $descricaoAds?>" required>
                     <div class="fotoadm">
                     <label class="label1" for="imagemads" id="imagemads-preview">
                         <img class="image-admin1" src="https://bit.ly/3ubuq5o" alt="">
-                            <input class="img-input" type="file" id="imagemads" name="imagemads-preview" accept="image/*" style="opacity: 0; width: 100%; height: 100%;">
+                            <input class="img-input" type="file" id="imagemads" name="imagemads-preview" accept="image/*" value="<?php echo $imagemads?>" style="opacity: 0; width: 100%; height: 100%;">
                     </label>
                     </div>
                     <div class="botaocadastraradocao">
                     <button type="submit">Cadastrar</button>
                     </div>
+                    <?php } ?>
                 </form>
             </div>
         </div>
@@ -119,15 +142,29 @@
             <a href="#" class="close-cadastro-animal" id="closeModal">&times;</a>
             <div class="content-cadastro-animal">
                 <div class="container-animais">
-                    <form action="bancoadocao.php" method="post" enctype="multipart/form-data">
+                    <form action="atualizar_adocaoperdidos.php" method="POST" enctype="multipart/form-data">
+
+                    <?php
+
+                    $sql = "SELECT * FROM `` WHERE id_perdidos = $id";
+                    $buscar = mysql_query($conn,$sql);
+
+                    while($array = mysql_fetch_array($buscar)) {
+                        $id_perdidos = $array[''];
+                        $NomePerd = $array[''];
+                        $descricaoPerd = $array[''];
+                        $imagemPerd = $array[''];
+
+                    ?>
+
                         <label for="nomeDog">Nome do Bichinho:</label>
-                        <input type="text" id="NomePerd" name="NomePerd" required>
+                        <input type="text" id="NomePerd" name="NomePerd" value="<?php echo $NomePerd?>" required>
                         <label for="descricaoDog">Descrição do Bichinho:</label>
-                        <input type="text" id="descricaoPerd" name="descricaoPerd" required>
+                        <input type="text" id="descricaoPerd" name="descricaoPerd" value="<?php echo $descricaoPerd?>" required>
                         <label class="label" for="fileAnimal">
                             <div class="image-upload">
                                 <img src="https://bit.ly/3ubuq5o" alt="Upload de imagem" class="upload-placeholder">
-                                <input class="img-input" type="file" id="imagemPerd" name="imagemPerd" accept="image/*" style="opacity: 0; width: 100%; height: 100%;">
+                                <input class="img-input" type="file" id="imagemPerd" name="imagemPerd" accept="image/*" value="<?php echo $imagemPerd?>" style="opacity: 0; width: 100%; height: 100%;">
                             </div>
                         </label>
                         <button type="submit">Cadastrar</button>
