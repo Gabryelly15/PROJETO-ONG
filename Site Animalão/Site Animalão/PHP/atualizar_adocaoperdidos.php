@@ -1,11 +1,4 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "adocao";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
 include 'bancoadoção.php';
 
 $id = $_POST['id_adocao'];
