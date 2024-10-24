@@ -27,7 +27,7 @@
 
     <?php
       include 'bancoadoção.php';
-      $sql = "SELECT * FROM `bancoadocao`";
+      $sql = "SELECT * FROM `adocao`";
       $busca = mysqli_query($conn, $sql);
 
       while ($array = mysql_fetch_array($busca)){

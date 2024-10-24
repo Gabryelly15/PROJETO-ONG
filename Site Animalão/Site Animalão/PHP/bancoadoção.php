@@ -15,7 +15,7 @@ $NomeAds = $_POST['NomeAds'];
 $descricaoAds = $_POST['descricaoAds'];
 $imagemads = $_FILES['imagemads'];
 
-$sql = "INSERT INTO adoção (NomeAds, descricaoAds, imagemads) VALUES ('$NomeAds', '$descricaoAds', '$imagemads')";
+$sql = "INSERT INTO adocao (NomeAds, descricaoAds, imagemads) VALUES ('$NomeAds', '$descricaoAds', '$imagemads')";
 
 
 if ($conn->query($sql) === TRUE) {

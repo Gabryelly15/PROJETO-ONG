@@ -93,7 +93,7 @@ echo $id = $_GET['id']
                 <form action="atualizar_adocaoperdidos.php" method="POST" enctype="multipart/form-data">
                     <?php
 
-                    $sql = "SELECT * FROM `adoção` WHERE id_adocao = $id";
+                    $sql = "SELECT * FROM `adocao` WHERE id_adocao = $id";
                     $buscar = mysql_query($conn,$sql);
 
                     while($array = mysql_fetch_array($buscar)) {
