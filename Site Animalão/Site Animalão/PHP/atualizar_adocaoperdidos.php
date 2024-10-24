@@ -1,8 +1,7 @@
 <?php
-
 include 'bancoadoção.php';
 
-$id = $_POST['id'];
+$id = $_POST['id_adocao'];
 $NomeAds = $_POST['NomeAds']
 $descricaoAds = $_POST['descricaoAds'];
 $imagemads = $_POST['imagemads'];

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17/09/2024 às 21:12
+-- Tempo de geração: 25/09/2024 às 20:31
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -30,8 +30,29 @@ SET time_zone = "+00:00";
 CREATE TABLE `adoção` (
   `NomeAds` varchar(50) NOT NULL,
   `descricaoAds` varchar(500) NOT NULL,
-  `imagemads` blob NOT NULL
+  `imagemAds` blob NOT NULL,
+  `id_adocao` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices de tabela `adoção`
+--
+ALTER TABLE `adoção`
+  ADD PRIMARY KEY (`id_adocao`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `adoção`
+--
+ALTER TABLE `adoção`
+  MODIFY `id_adocao` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

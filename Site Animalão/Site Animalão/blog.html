@@ -27,6 +27,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-wErF9e0w6Xwn2gviLQu1NSJvSma84cniNIWIF1i6bPfW1o2H+tgeMpvGmJ7yYfKJ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-3VdBvL5SWsm/jO99pfvzYLgyrlYfr3lZCzJO3FzEW1QbS6KE3Df4xVs3z5V/4xgt" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+JqO2jN6J/QEnmHa+MVyEyNaT7p4UwJUbyyaX9TlT2HV3gR" crossorigin="anonymous"></script>
+    <script src="js/blog.js" defer></script>
+
     <style>
         body {
             background-color: #fff5eb;
@@ -63,55 +65,64 @@
 
         <div class="post-card">
             <img src="imagem/calopsita.jpeg" alt="Imagem principal do post 1">
-            <div class="post-header">
-                <img src="imagem/Mell.png" alt="Usuário">
-                <div class="post-info">
-                    <p>Mel</p>
-                    <p>04/05/2024</p>
-                </div>
-            </div>
             <h2>Comidas Proíbidas para os pets</h2>
             <p>blablablablablablablablablablablablablablablabla</p>
             <div class="post-footer">
                 <p>100 visualizações</p>
                 <p>10 comentários</p>
                 <button><i class="far fa-heart"></i></button>
+                <div class="post-header">
+                <img src="imagem/Mell.png" alt="Usuário">
+                <div class="post-info">
+                    <p>Mel</p>
+                    <p>04/05/2024</p>
+                </div>
+            </div>
             </div>
         </div>
+        <!-- Modal para exibir o conteúdo completo do post -->
+<div id="postModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalPostTitle">Título do Post</h2>
+        <p id="modalPostContent">Conteúdo completo do post...</p>
+        <img id="modalPostImage" src="" alt="Imagem do post" style="width:100%; height:auto;">
+    </div>
+</div>
     
         <div class="post-card">
             <img src="imagem/cachorrosobre.jpeg" alt="Imagem principal do post 1">
-            <div class="post-header">
+            <h2>Como vacinar seu pet</h2>
+            <p>blablablablablablablabla</p>
+            <div class="post-footer">
+                <p>100 visualizações</p>
+                <p>10 comentários</p>
+                <button><i class="far fa-heart"></i></button>
+                 <div class="post-header">
                 <img src="imagem/Mell.png" alt="Usuário">
                 <div class="post-info">
                     <p>Mel</p>
                     <p>05/02/2024</p>
                 </div>
             </div>
-            <h2>Título do Post</h2>
-            <p>Breve texto sobre o tema do post.</p>
-            <div class="post-footer">
-                <p>100 visualizações</p>
-                <p>10 comentários</p>
-                <button><i class="far fa-heart"></i></button>
             </div>
         </div>
 
         <div class="post-card">
             <img src="imagem/carrossel 2.jpeg" alt="Imagem principal do post 1">
-            <div class="post-header">
-                <img src="imagem/Luana.png" alt="Usuário">
-                <div class="post-info">
-                    <p>Luana</p>
-                    <p>03/03/2024</p>
-                </div>
-            </div>
             <h2>Título do Post</h2>
             <p>Breve texto sobre o tema do post.</p>
             <div class="post-footer">
                 <p>100 visualizações</p>
                 <p>10 comentários</p>
                 <button><i class="far fa-heart"></i></button>
+                <div class="post-header">
+                    <img src="imagem/Luana.png" alt="Usuário">
+                    <div class="post-info">
+                        <p>Luana</p>
+                        <p>03/03/2024</p>
+                    </div>
+                </div>
             </div>
         </div>
         
