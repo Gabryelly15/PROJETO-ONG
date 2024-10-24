@@ -1,6 +1,6 @@
 <?php
 
-include 'bancoadoção.php';
+include 'bancoadocao.php';
 
 echo $id = $_GET['id']
 

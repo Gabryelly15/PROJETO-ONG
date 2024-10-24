@@ -1,6 +1,6 @@
 <?php
 
-include 'bancoadoção.php';
+include 'bancoadocao.php';
 $id = $_GET['id'];
 
 $sql = "DELETE FROM `adocao` WHERE id_adocao = $id";

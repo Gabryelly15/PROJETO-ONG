@@ -26,7 +26,7 @@
   </thead>
 
     <?php
-      include 'bancoadoção.php';
+      include 'bancoadocao.php';
       $sql = "SELECT * FROM `adocao`";
       $busca = mysqli_query($conn, $sql);
 

@@ -1,5 +1,5 @@
 <?php
-include 'bancoadoção.php';
+include 'bancoadocao.php';
 
 $id = $_POST['id_adocao'];
 $NomeAds = $_POST['NomeAds']
