@@ -32,8 +32,8 @@
 
       while ($array = mysql_fetch_array($busca)){
         $id_adocao = $array['id_adocao'];
-        $NomeAds = $array['NomeAds'];
-        $descricaoAds = $array['descricaoAds'];
+        $NomeAds = $_POST['NomeAds'];
+        $descricaoAds = $_POST['descricaoAds'];
         $imagemads = $array['imagemads'];
       ?>
 
