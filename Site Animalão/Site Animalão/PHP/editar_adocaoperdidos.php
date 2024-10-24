@@ -169,10 +169,12 @@ echo $id = $_GET['id']
                         </label>
                         <button type="submit">Cadastrar</button>
                     </form>
+                    <?php } ?>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <a class="btn btn-success btn-lg d-grid gap-2 d-md-flex justify-content-md-end" href="listar_adocaoperdidos.php" role="button" style="margin-right: 40px;">Tabela de Edições</a>
