@@ -168,3 +168,18 @@
   from {opacity: 0.2;}
   to {opacity: 1;}
 }
+
+.video-container2 {
+  position: absolute; /* Define que o elemento será posicionado de forma absoluta */
+  right: 50px; /* Move o vídeo 20px a partir do lado direito da tela */
+  top: 285%; /* Posiciona o topo do vídeo no meio vertical da tela */
+  transform: translateY(-50%); /* Centraliza o vídeo verticalmente */
+  width: 300px; /* Define a largura do vídeo */
+  height: auto; /* Mantém a proporção do vídeo */
+  border: 3px solid #c69a74; /* Adiciona uma borda opcional */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para estética */
+}
+
+
